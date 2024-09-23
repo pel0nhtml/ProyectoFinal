@@ -1,0 +1,75 @@
+
+.custom-carousel {
+  position: relative;
+  width: 100vw;
+  height: 100%; /* Ocupa toda la altura de la pantalla */
+  overflow: hidden;
+}
+
+.custom-carousel .carousel-inner,
+.custom-carousel .carousel-item,
+.custom-carousel .carousel-item img {
+  height: 100vh; /* Forzar el 100% de la pantalla */
+}
+
+.custom-carousel .carousel-item img {
+  width: 100vw;
+  object-fit: cover; /* Ajustar para que la imagen cubra todo el contenedor sin deformarse */
+}
+
+/* Evitar que las imágenes se hagan más grandes al cambiar de diapositiva */
+.custom-carousel .carousel-item {
+  transition: transform 0.5s ease-in-out;
+}
+
+.custom-carousel .carousel-item img {
+  transition: none; /* Eliminar cualquier transición en la imagen */
+}
+
+/* Estilos para el texto del caption */
+.custom-carousel .carousel-caption h3,
+.custom-carousel .carousel-caption p {
+  color: #DAA520; /* Color dorado */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para hacer que el texto resalte */
+}
+
+/* Ajustar la posición del caption */
+.custom-carousel .carousel-caption {
+  bottom: 20%; /* Ajusta este valor si es necesario */
+}
+
+/* Estilos para los indicadores */
+.custom-carousel .carousel-indicators li {
+  background-color: #DAA520; /* Color dorado para los indicadores */
+}
+
+.custom-carousel .carousel-indicators .active {
+  background-color: #FFD700; /* Un dorado más brillante para el indicador activo */
+}
+
+/* Estilos para los controles */
+.custom-carousel .carousel-control-prev-icon,
+.custom-carousel .carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente detrás de las flechas */
+  border-radius: 50%;
+}
+
+.custom-carousel .carousel-control-prev-icon::after,
+.custom-carousel .carousel-control-next-icon::after {
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #DAA520; /* Color dorado */
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.custom-carousel .carousel-control-prev-icon::after {
+  mask-image: url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjREFBNTIwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiI+PHBvbHlnb24gcG9pbnRzPSIxMC41IDEuNSA1LjUgOCAxMC41IDE0LjUiLz48L3N2Zz4=');
+}
+
+.custom-carousel .carousel-control-next-icon::after {
+  mask-image: url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjREFBNTIwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiI+PHBvbHlnb24gcG9pbnRzPSI1LjUgMS41IDEwLjUgOCA1LjUgMTQuNSIvPjwvc3ZnPg==');
+}

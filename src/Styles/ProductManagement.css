@@ -1,0 +1,142 @@
+/* Contenedor principal */
+.product-management-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #1A1D1E; /* Fondo oscuro */
+  color: #EAA118; /* Texto principal */
+  min-height: 100vh; /* Asegura que ocupe la pantalla completa */
+}
+
+/* Lista de productos */
+.ProductList {
+  width: 45%;
+  background-color: #FFFFFF; /* Fondo blanco */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #1A1D1E; /* Texto oscuro */
+  margin-right: 20px; /* Espacio entre la lista de productos y el formulario */
+}
+
+.product-list h2 {
+  margin-bottom: 20px;
+  color: #EAA118;
+}
+
+.product-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.product-list li {
+  background-color: #F5F5F5;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #1A1D1E;
+  display: flex; /* Flex para alinear imagen y texto */
+  align-items: center;
+}
+
+.product-item {
+  display: flex;
+  align-items: center;
+}
+
+.product-image {
+  padding: auto;
+  width: 20px; /* Ancho fijo para las imágenes */
+  height: auto; /* Alto fijo para las imágenes */
+  border-radius: 5px;
+  margin-right: 10px; /* Margen para separar la imagen del texto */
+}
+
+/* Formulario de productos */
+.product-form-container {
+  width: 55%;
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #1A1D1E;
+  margin-left: 20px;
+}
+
+.product-form-container h2 {
+  margin-bottom: 20px;
+  color: #EAA118;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #EAA118;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #E0E0E0;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #1A1D1E;
+  background-color: #F9F9F9;
+  transition: border 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #EAA118;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: #EAA118;
+  color: #1A1D1E;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #d98c10;
+  transform: scale(1.05);
+}
+
+button[type="submit"]:active {
+  transform: scale(0.95);
+}
+
+/* Añade estos estilos adicionales para los botones de edición y eliminación */
+.product-item div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-item button {
+  background: none;
+  border: none;
+  color: #EAA118; /* Color dorado */
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.product-item button:hover {
+  color: #FFD700; /* Dorado más oscuro */
+}

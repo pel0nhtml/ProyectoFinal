@@ -1,0 +1,23 @@
+.user-section {
+    padding: 20px;
+  }
+  
+  .user-profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-profile span {
+    margin-left: 10px;
+    font-weight: bold;
+  }
+  
+  ul {
+    margin-top: 10px;
+  }
+  
+  ul li {
+    list-style: none;
+    margin: 10px 0;
+  }
+  

@@ -1,0 +1,74 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+.login-container {
+  background-color: #1A1D1E;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 0 auto;
+  color: #EAA118;
+  font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: white; /* Cambia el color del título a blanco */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%; /* Asegura que el input ocupe el 100% del contenedor */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box; /* Evita que el padding afecte el ancho */
+  background-color: #333; /* Fondo más oscuro */
+  color: white; /* Color del texto en blanco */
+}
+
+button.submit-btn {
+  background-color: #EAA118;
+  color: white; /* Color del texto en blanco */
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%; /* Asegura que el botón también ocupe el 100% */
+  margin-top: 10px; /* Separación entre el botón y el último input */
+}
+
+button.submit-btn:hover {
+  background-color: #d98c10;
+  transform: scale(1.05);
+}
+
+button.submit-btn:active {
+  transform: scale(0.95);
+}
+
+p {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+  color: white; /* Texto blanco para los párrafos */
+}
+
+a.register-link {
+  color: #007BFF; /* Color azul */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a.register-link:hover {
+  color: #0056b3; /* Color azul oscuro al pasar el cursor */
+  text-decoration: underline;
+}

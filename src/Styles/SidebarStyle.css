@@ -1,0 +1,153 @@
+/* Estilos del icono de abrir/cerrar el sidebar */
+.sidebar-icon {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  font-size: 2rem;
+  color: #EAA118;
+  z-index: 1100;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.sidebar-icon {
+  position: fixed;
+  top: 2rem; /* Más espacio en la parte superior */
+  left: 2rem; /* Más espacio en el lado izquierdo */
+  font-size: 3rem; /* Tamaño del icono más grande */
+  color: #EAA118; /* Color dorado inicial */
+  cursor: pointer;
+  z-index: 1100;
+  padding: 10px; /* Añadir padding interno al icono */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Transición suave */
+}
+
+/* Cambia de color cuando el sidebar está abierto */
+.sidebar.open ~ .sidebar-icon {
+  color: #F5F5F5; /* Color claro cuando está abierto */
+  background-color: #EAA118; /* Fondo dorado cuando está abierto */
+}
+
+/* Estilos sidebar actualizados */
+.sidebar {
+  position: fixed;
+  top: 0;
+  transform: translateX(-100%); /* Inicialmente fuera de la vista */
+  width: 400px;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transition: transform 0.3s ease; /* Animación suave */
+  z-index: 1050; /* Mayor que el navbar para superponerse */
+  background-color: #1A1D1E; /* Fondo oscuro */
+  padding-bottom: 2rem; /* Espacio adicional al final del sidebar */
+}
+
+.sidebar.open {
+  transform: translateX(0%); /* Mueve el sidebar a la vista */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 20px; /* Más espacio dentro del sidebar */
+ 
+}
+
+.sidebar li {
+  padding: 20px 0; /* Espaciado más grande entre los elementos */
+  border-bottom: 1px solid #444;
+  
+}
+
+/* Estilos para los enlaces del sidebar */
+.sidebar a {
+  color: #EAA118; /* Color dorado */
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.sidebar a:hover {
+  color: #F5F5F5; /* Color claro al pasar el mouse */
+  font-style: italic;
+}
+
+/* Estilos para los botones de "Iniciar Sesión" y "Registrarse" */
+.sidebar-button {
+  margin-top: auto; /* Mueve los botones al final del sidebar */
+  padding: 1rem;
+  border-top: 1px solid #444;
+  text-align: center;
+}
+
+.sidebar-button a {
+  color: #EAA118; /* Color dorado para los botones */
+  font-weight: bold;
+  font-size: 1rem;
+  display: inline-block;
+  text-align: center;
+  padding: 12px 25px; /* Tamaño más grande para el botón */
+  border: 2px solid #EAA118; /* Borde dorado */
+  border-radius: 50px; /* Bordes redondeados */
+  background-color: transparent; /* Fondo transparente */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar-button a:hover {
+  color: #1A1D1E; /* Color del texto al pasar el mouse */
+  background-color: #EAA118; /* Fondo dorado al pasar el mouse */
+  border: 2px solid #EAA118; /* Borde dorado al pasar el mouse */
+  padding: 12px 25px; /* Tamaño del botón al pasar el mouse */
+}
+
+/* Estilos minimalistas para la barra de desplazamiento del sidebar */
+.sidebar::-webkit-scrollbar {
+  width: 8px; /* Ancho de la barra de desplazamiento */
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #EAA118; /* Color dorado para la barrita */
+  border-radius: 10px; /* Bordes redondeados de la barrita */
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background-color: #1A1D1E; /* Fondo del track de la barra de desplazamiento */
+}
+
+/* Buscador con el botón dentro del input */
+.sidebar-search {
+  position: relative; /* Relativo para posicionar el botón de manera absoluta dentro */
+  margin-top: 4rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 50px 12px 20px; /* Más espacio para el botón de búsqueda */
+  border: 2px solid #EAA118;
+  border-radius: 10px;
+  background-color: #1A1D1E;
+  color: #FFF;
+  font-size: 1rem;
+}
+
+.search-input::placeholder {
+  color: #EAA118; /* Color del placeholder */
+}
+
+.search-button {
+  position: absolute;
+  right: 10px; /* Posicionado en la parte derecha dentro del input */
+  top: 50%;
+  transform: translateY(-50%); /* Centrado verticalmente */
+  background-color: #EAA118;
+  color: #1F1F1A;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #CF9E3F; /* Cambio de color al hacer hover */
+}
